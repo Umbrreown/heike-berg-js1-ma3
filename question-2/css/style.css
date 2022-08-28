@@ -1,0 +1,41 @@
+body {
+    background-color: bisque;
+}
+
+.resultBox {
+
+/*     Only styled it a little bit here though it was not required.*/ 
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+#loading {
+
+/*     This should never show, since the API loads so fast. But if it for some reason is slow, it is here. :) */
+
+    width: 5rem;
+    height: 5rem;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #063727;
+    border-radius: 100%;
+    margin: auto;
+    animation: spin 1s infinite linear;
+}
+
+ @keyframes spin {
+
+    from {
+
+    transform: rotate(Odeg);
+
+    }
+    to {
+
+    transform: rotate(360deg);
+
+    }
+}
+
